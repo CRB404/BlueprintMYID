@@ -72,6 +72,13 @@ var graphs = [
 //     });
 // }
 
+function setStrings() {
+  document.getElementById("search1").value = "Eric Chan" 
+  document.getElementById("search2").value = "echan@ideo.com"
+  document.getElementById("search3").value = "7202516853"
+  document.getElementById("search4").value = "SSN hash"
+}
+
 function checkInput() {
   if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('success');
