@@ -73,9 +73,9 @@ function writeUserData() {
 }
 
 function checkInput() {
-  // if (document.getElementById("search").value = "good job") {
+  if (document.getElementById("search").value = "good job") {
       console.log('success');
-  // }
+  }
 }
 
 // Call search results and display
