@@ -76,8 +76,54 @@ function checkInput() {
   if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('success');
   }
+  // one error
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 1');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 2');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 3');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 4');
+  }
+  // two errors
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 1 and 2');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 2 and 3');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 3 and 4');
+  }
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 1 and 4');
+  }
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 1 and 3');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 2 and 4');
+  }
+  // three errors
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
+    console.log('error on 1, 2 and 3');
+  }
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 1, 2 and 4');
+  }
+  else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 1, 3 and 4');
+  }
+  else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
+    console.log('error on 2, 3 and 4');
+  }
+  // total error
   else {
-    console.log('error');
+    console.log('total error');
   }
 }
 
@@ -103,30 +149,30 @@ function checkInput() {
 
 // Buttons On Storefront
 // _____________________________________________________________________________
-function write1() {
-  firebase.database().ref('Demand/Item 1').transaction(function(value) {
-    console.log('value', value);
-    return value + 1;
-  });
-}
-
-function write2() {
-  firebase.database().ref('Demand/Item 2').transaction(function(value) {
-    console.log('value', value);
-    return value + 1;
-  });
-}
-
-function write3() {
-  firebase.database().ref('Demand/Item 3').transaction(function(value) {
-    console.log('value', value);
-    return value + 1;
-  });
-}
-
-function write4() {
-  firebase.database().ref('Demand/Item 4').transaction(function(value) {
-    console.log('value', value);
-    return value + 1;
-  });
-}
+// function write1() {
+//   firebase.database().ref('Demand/Item 1').transaction(function(value) {
+//     console.log('value', value);
+//     return value + 1;
+//   });
+// }
+//
+// function write2() {
+//   firebase.database().ref('Demand/Item 2').transaction(function(value) {
+//     console.log('value', value);
+//     return value + 1;
+//   });
+// }
+//
+// function write3() {
+//   firebase.database().ref('Demand/Item 3').transaction(function(value) {
+//     console.log('value', value);
+//     return value + 1;
+//   });
+// }
+//
+// function write4() {
+//   firebase.database().ref('Demand/Item 4').transaction(function(value) {
+//     console.log('value', value);
+//     return value + 1;
+//   });
+// }
