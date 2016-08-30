@@ -62,24 +62,25 @@ var graphs = [
 // Search Function
 // _____________________________________________________________________________
 
-function writeUserData() {
-  variable.push({ val:document.getElementById("search").value })
-    .then(function() {
-      console.log('Synchronization succeeded');
-    })
-    .catch(function(error) {
-      console.log('Synchronization failed');
-    });
-}
+// function writeUserData() {
+//   variable.push({ val:document.getElementById("search").value })
+//     .then(function() {
+//       console.log('Synchronization succeeded');
+//     })
+//     .catch(function(error) {
+//       console.log('Synchronization failed');
+//     });
+// }
 
 function checkInput() {
-  if (document.getElementById("search").value == "Eric Chan") {
+  if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('success');
   }
   else {
     console.log('error');
   }
 }
+
 
 // Call search results and display
 

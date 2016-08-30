@@ -382,7 +382,7 @@ hr {
 
 /* Background */
 body {
-  height: 60%;
+  height: 100%;
   background: #1E1833;
   /*background: #F05B53;*/
 }
@@ -418,7 +418,7 @@ h1 {
   white-space: nowrap;
 }
 
-.container-4 input#search{
+.container-4 input#search1{
   width: 98%;
   height: 50px;
   background: transparent;
@@ -432,21 +432,115 @@ h1 {
   border-radius: 5px;
 }
 
-.container-4 input#search::-webkit-input-placeholder {
+.container-4 input#search1::-webkit-input-placeholder {
    color: #B3B3B3;
 }
 
-.container-4 input#search:-moz-placeholder {
+.container-4 input#search1:-moz-placeholder {
    color: #B3B3B3;
 }
 
-.container-4 input#search::-moz-placeholder {
+.container-4 input#search1::-moz-placeholder {
    color: #B3B3B3;
 }
 
-.container-4 input#search:-ms-input-placeholder {
+.container-4 input#search1:-ms-input-placeholder {
    color: #B3B3B3;
 }
+
+
+.container-4 input#search2{
+  width: 98%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search2::-webkit-input-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search2:-moz-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search2::-moz-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search2:-ms-input-placeholder {
+   color: #B3B3B3;
+}
+
+
+.container-4 input#search3{
+  width: 98%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search3::-webkit-input-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search3:-moz-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search3::-moz-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search3:-ms-input-placeholder {
+   color: #B3B3B3;
+}
+
+
+.container-4 input#search4{
+  width: 98%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search4::-webkit-input-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search4:-moz-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search4::-moz-placeholder {
+   color: #B3B3B3;
+}
+
+.container-4 input#search4:-ms-input-placeholder {
+   color: #B3B3B3;
+}
+
 
 .container-4 button.icon{
   -webkit-border-radius: 5%;
