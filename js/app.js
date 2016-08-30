@@ -74,9 +74,7 @@ function writeUserData() {
 
 function checkInput() {
   if (document.getElementById("search").value = "good job") {
-    .then(function() {
       console.log('success');
-    })
   }
 }
 
