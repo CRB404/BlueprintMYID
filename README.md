@@ -1,5 +1,5 @@
 
-Blueprint Storefront Interface
+Blueprint MY.ID Interface
 =========
 
-The front end and firebase call back the Storefront blueprint prototype.
+The front end and firebase call back the MY.ID blueprint prototype.

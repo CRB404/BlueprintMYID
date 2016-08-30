@@ -72,6 +72,14 @@ function writeUserData() {
     });
 }
 
+function checkInput() {
+  if (document.getElementById("search").value = "good job") {
+    .then(function() {
+      console.log('success');
+    })
+  }
+}
+
 // Call search results and display
 
 // window.onload = function() {
@@ -84,6 +92,11 @@ function writeUserData() {
 //        //between the <a ...> </a> tags with the value of splitText
 //
 // }
+
+// Input Function
+// _____________________________________________________________________________
+
+
 
 
 // Buttons On Storefront
