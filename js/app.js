@@ -73,8 +73,11 @@ function writeUserData() {
 }
 
 function checkInput() {
-  if (document.getElementById("search").value = "good job") {
-      console.log('success');
+  if ("Eric Chan" = document.getElementById("search").value) {
+    console.log('success');
+  }
+  else {
+    console.log('error');
   }
 }
 
