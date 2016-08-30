@@ -73,7 +73,7 @@ function writeUserData() {
 }
 
 function checkInput() {
-  if ("Eric Chan" = document.getElementById("search").value) {
+  if (document.getElementById("search").value == "Eric Chan") {
     console.log('success');
   }
   else {
