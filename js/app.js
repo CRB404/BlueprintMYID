@@ -76,7 +76,7 @@ var graphs = [
 // }
 
 
-particle.login({username: 'email@example.com', password: 'pass'}).then(
+particle.login({username: 'weftech@gmail.com', password: 'W3Ftech@spark'}).then(
   function(data){
     console.log('API call completed on promise resolve: ', data.body.access_token);
   },
@@ -96,7 +96,7 @@ function checkInput() {
   // no errors
   if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('success');
-    var particle = new Particle();
+
     var fnPr = particle.callFunction({ deviceId: '21001f000747343232363230', name: 'Function 01', argument: 'D0:HIGH', auth: token });
 
     fnPr.then(
