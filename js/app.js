@@ -84,57 +84,87 @@ function checkInput() {
   // no errors
   if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('success');
-    document.getElementById("on").value = "on"
+    document.getElementById("on").value = "success"
     document.getElementById("on").checked = true;
   }
   // one error
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1');
+    document.getElementById("on").value = "error on 1"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 2');
+    document.getElementById("on").value = "error on 2"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 3');
+    document.getElementById("on").value = "error on 3"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 4');
+    document.getElementById("on").value = "error on 4"
+    document.getElementById("on").checked = true;
   }
   // two errors
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1 and 2');
+    document.getElementById("on").value = "error on 1 and 2"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 2 and 3');
+    document.getElementById("on").value = "error on 2 and 3"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 3 and 4');
+    document.getElementById("on").value = "error on 3 and 4"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 1 and 4');
+    document.getElementById("on").value = "error on 1 and 4"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1 and 3');
+    document.getElementById("on").value = "error on 1 and 3"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 2 and 4');
+    document.getElementById("on").value = "error on 2 and 4"
+    document.getElementById("on").checked = true;
   }
   // three errors
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1, 2 and 3');
+    document.getElementById("on").value = "error on 1, 2 and 3"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 1, 2 and 4');
+    document.getElementById("on").value = "error on 1, 2 and 4"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 1, 3 and 4');
+    document.getElementById("on").value = "error on 1, 3 and 4"
+    document.getElementById("on").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 2, 3 and 4');
+    document.getElementById("on").value = "error on 2, 3 and 4"
+    document.getElementById("on").checked = true;
   }
   // total error
   else {
     console.log('total error');
+    document.getElementById("on").value = "total error"
+    document.getElementById("on").checked = true;
   }
 }
 
