@@ -52,7 +52,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 60%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -174,7 +174,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: #fff;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -185,7 +185,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #F1C77C;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -198,8 +198,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #F1C77C;
+  border-color: #3B99FC;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -238,7 +238,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #F1C77C;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -267,7 +267,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #3B99FC;
   outline: 0; }
 label,
 legend {
@@ -290,7 +290,10 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
 ol {
   list-style: decimal inside; }
 ol, ul {
@@ -303,6 +306,7 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
+  float: left;
   margin-bottom: 1rem; }
 
 
@@ -346,7 +350,7 @@ input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 3rem; }
 pre,
 blockquote,
 dl,
@@ -411,6 +415,7 @@ img.logo {
   width: 40%;
 }
 
+
 /* Search Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .box{
@@ -429,11 +434,10 @@ img.logo {
   width: 98%;
   height: 50px;
   background: transparent;
-  border: none;
   font-size: 10pt;
   float: left;
   color: #fff;
-  padding-left: 1px;
+  padding-left: 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -460,11 +464,10 @@ img.logo {
   width: 98%;
   height: 50px;
   background: transparent;
-  border: none;
   font-size: 10pt;
   float: left;
   color: #fff;
-  padding-left: 1px;
+  padding-left: 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -491,11 +494,10 @@ img.logo {
   width: 98%;
   height: 50px;
   background: transparent;
-  border: none;
   font-size: 10pt;
   float: left;
   color: #fff;
-  padding-left: 1px;
+  padding-left: 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -522,11 +524,10 @@ img.logo {
   width: 98%;
   height: 50px;
   background: transparent;
-  border: none;
   font-size: 10pt;
   float: left;
   color: #fff;
-  padding-left: 1px;
+  padding-left: 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;

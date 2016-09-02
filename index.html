@@ -37,7 +37,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<div class="container" style="width: 100%;">
 			<div class="row">
-				<div class="twelve column" style="margin-top: 15%;">
+				<div class="twelve column" style="margin-top: 12%;">
 					<img class="logo" src="images/myid-02.png"></img>
 				</div>
 			</div>
@@ -62,22 +62,30 @@
 					<div class="row">
 						<div class="box">
 							<div class="container-4">
-								<input type="text" id="search1" placeholder="input 1" value=""/>
-
+								<ul >
+									<li style="width: 1%;margin-right: 6%;"><input id="check1" type="radio" style="display:inline; margin-top: 20px;"/></li>
+									<li style="width:92%;"><input type="text" id="search1" placeholder="input 1" value=""/></li>
+								</ul>
 							</div>
 							<div class="container-4">
-								<input type="text" id="search2" placeholder="input 2" value=""/>
-
+								<ul >
+									<li style="width: 1%;margin-right: 6%;"><input id="check2" type="radio" style="display:inline; margin-top: 20px;"/></li>
+									<li style="width:92%;"><input type="text" id="search2" placeholder="input 2" value=""/></li>
+								</ul>
 							</div>
 							<div class="container-4">
-								<input type="text" id="search3" placeholder="input 3" value=""/>
-
+								<ul >
+									<li style="width: 1%;margin-right: 6%;"><input id="check3" type="radio" style="display:inline; margin-top: 20px;"/></li>
+									<li style="width:92%;"><input type="text" id="search3" placeholder="input 3" value=""/></li>
+								</ul>
 							</div>
 							<div class="container-4">
-								<input type="text" id="search4" placeholder="input 4" value=""/>
-
+								<ul >
+									<li style="width: 1%;margin-right: 6%;"><input id="check4" type="radio" style="display:inline; margin-top: 20px;"/></li>
+									<li style="width:92%;"><input type="text" id="search4" placeholder="input 4" value=""/></li>
+								</ul>
 							</div>
-							<button onclick="checkInput()">Check Input</button>
+							<button onclick="checkInput()" style="margin-left:6.8%;">Check Input</button>
 
 							<form action="https://api.particle.io/v1/devices/28003e000947343337373738/led?access_token=7dfb755486e5e116bf9a73c6764959c1180c64cf" method="POST">
 								<br>
@@ -86,7 +94,7 @@
 								<input style="display:none;" type="radio" name="args" value="off">
 								<br>
 								<br>
-								<input style="" type="submit" value="TEST">
+								<input type="submit" value="Visualize" style="margin-left:6.7%;">
 							</form>
 
 

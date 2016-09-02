@@ -78,6 +78,10 @@ function setStrings() {
   document.getElementById("search2").value = "echan@ideo.com"
   document.getElementById("search3").value = "7202516853"
   document.getElementById("search4").value = "SSN hash"
+  document.getElementById("check1").checked = false;
+  document.getElementById("check2").checked = false;
+  document.getElementById("check3").checked = false;
+  document.getElementById("check4").checked = false;
 }
 
 function checkInput() {
@@ -86,85 +90,149 @@ function checkInput() {
     console.log('success');
     document.getElementById("on").value = "success"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = true;
   }
   // one error
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1');
     document.getElementById("on").value = "error on 1"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 2');
     document.getElementById("on").value = "error on 2"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 3');
     document.getElementById("on").value = "error on 3"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 4');
     document.getElementById("on").value = "error on 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = false;
   }
   // two errors
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1 and 2');
     document.getElementById("on").value = "error on 1 and 2"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 2 and 3');
     document.getElementById("on").value = "error on 2 and 3"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 3 and 4');
     document.getElementById("on").value = "error on 3 and 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = false;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 1 and 4');
     document.getElementById("on").value = "error on 1 and 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = false;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1 and 3');
     document.getElementById("on").value = "error on 1 and 3"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 2 and 4');
     document.getElementById("on").value = "error on 2 and 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = false;
   }
   // three errors
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value == "SSN hash") {
     console.log('error on 1, 2 and 3');
     document.getElementById("on").value = "error on 1, 2 and 3"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = true;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value == "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 1, 2 and 4');
     document.getElementById("on").value = "error on 1, 2 and 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check4").checked = false;
   }
   else if (document.getElementById("search1").value != "Eric Chan" && document.getElementById("search2").value == "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 1, 3 and 4');
     document.getElementById("on").value = "error on 1, 3 and 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = false;
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 2, 3 and 4');
     document.getElementById("on").value = "error on 2, 3 and 4"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = false;
   }
   // total error
   else {
     console.log('total error');
     document.getElementById("on").value = "total error"
     document.getElementById("on").checked = true;
+    document.getElementById("check1").checked = false;
+    document.getElementById("check2").checked = false;
+    document.getElementById("check3").checked = false;
+    document.getElementById("check4").checked = false;
   }
 }
 
