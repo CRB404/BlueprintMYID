@@ -405,6 +405,12 @@ h1 {
   text-align: center;
 }
 
+img.logo {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
 /* Search Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .box{
