@@ -226,7 +226,7 @@ function runOutput() {
   }
   else if (document.getElementById("search1").value == "Eric Chan" && document.getElementById("search2").value != "echan@ideo.com" && document.getElementById("search3").value != "7202516853" && document.getElementById("search4").value != "SSN hash") {
     console.log('error on 2, 3 and 4');
-    particle.callFunction({ deviceId: '430026001447343432313031', name: 'led', argument: 'error on 2, 3 and 3', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' });
+    particle.callFunction({ deviceId: '430026001447343432313031', name: 'led', argument: 'error on 2, 3 and 4', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' });
 
     document.getElementById("check1").checked = true;
     document.getElementById("check2").checked = false;
